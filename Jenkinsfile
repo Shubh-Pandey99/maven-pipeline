@@ -45,5 +45,12 @@
                     '''
                 }
             }
+            stage('CleanUp'){
+                steps {
+                    sh'''
+                    jenkins/cleanup/clean.sh
+                    '''
+                }
+            }
         }
     } 
