@@ -2,7 +2,7 @@
         agent any
         
         environment{
-            PASS=credentials('Docker-Registory-Pass')
+            PASS = credentials('Docker-Registory-Pass')
             }	
         stages{
             stage('Build'){
