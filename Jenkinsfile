@@ -1,6 +1,6 @@
 pipeline{
     agent any
-
+    
 	environment{
 		   PASS=credentials('Docker-Registory-Pass')
 		}	
@@ -28,7 +28,7 @@ pipeline{
                     junit 'java-app/target/surefire-reports/*.xml'
                 }
         }
-
+        
         stage('Push'){
             steps {
                 sh'''
@@ -46,4 +46,3 @@ pipeline{
         }
     }
 } 
-    }
